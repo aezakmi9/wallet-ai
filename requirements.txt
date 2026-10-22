@@ -1,0 +1,11 @@
+
+confluent-kafka
+httpx
+pydantic
+python-dotenv
+pytest
+
+# Later, for actual ML detection:
+# scikit-learn
+# numpy
+# pandas
