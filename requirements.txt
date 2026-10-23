@@ -1,11 +1,9 @@
-
+scikit-learn
+numpy
+pandas
+joblib
 confluent-kafka
 httpx
-pydantic
 python-dotenv
 pytest
 
-# Later, for actual ML detection:
-# scikit-learn
-# numpy
-# pandas
