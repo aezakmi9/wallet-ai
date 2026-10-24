@@ -20,6 +20,7 @@ def explain(event: dict, anomalies: list[str]) -> str:
     Do not invent additional transaction history.
     """
 
+    # TODO: shorter timeout + retry; consumer must keep working when Ollama is down (optional dependency)
     response = httpx.post(
         f"{OLLAMA_URL}/api/generate",
             json={
