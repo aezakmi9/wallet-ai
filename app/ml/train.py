@@ -13,6 +13,7 @@ MODEL_PATH = PROJECT_ROOT / "artifacts" / "isolation_forest.joblib"
 
 
 def train():
+    # TODO: only ~20 training rows — generate synthetic data or document it as a demo in README
     df = pd.read_csv(DATA_PATH)
 
 

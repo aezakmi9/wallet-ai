@@ -6,6 +6,7 @@ from app.ml.features import (
 )
 
 
+# TODO: not wired into the consumer yet
 class IsolationDetector:
 
     def __init__(self, model_path: str):

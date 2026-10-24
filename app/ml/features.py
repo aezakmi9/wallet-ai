@@ -7,10 +7,13 @@ FEATURE_NAMES = [
 ]
 
 def extract_features(event : dict) -> list[float]:
+    # TODO: support EUR and VND (VND has no minor units)
     if event["currency"] !="USD":
         raise ValueError("MVP supports USD only")
 
     amount = int(event["amountMinor"])
+    # TODO: platform events don't contain avgTransferMinor30d / previousTransfers1h —
+    #       compute per-user history inside wallet-ai from consumed events
     avg_amount = int(event["avgTransferMinor30d"])
     count = int(event["previousTransfers1h"])
 

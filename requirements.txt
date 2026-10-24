@@ -1,3 +1,4 @@
+# TODO: pin versions; move pytest to requirements-dev.txt
 scikit-learn
 numpy
 pandas
